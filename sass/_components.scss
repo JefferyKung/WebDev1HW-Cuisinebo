@@ -1,0 +1,90 @@
+@use 'base' as *;
+
+// logo
+    
+
+.logo img{
+    width: 90px;
+    height: 90px;
+    border: 3px solid #d3ab55;
+    border-radius: 50%;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    @include textStyles($transform: uppercase);
+        
+}
+// main-name
+.main-name{
+    font-family: $font-nunito;
+    color: $color-secondary;
+    font-size: 1.5rem;
+    @include textStyles($transform : uppercase);
+    font-weight: bold;
+}
+// sub-name
+.sub-name{
+    font-size: $font-josefinSans;
+    color: $color-secondary;
+    font-size: 1.5rem;
+    @include textStyles($transform : uppercase);
+    
+}
+
+
+
+// main-heading
+
+.header-banner{
+    font-size: 3rem;
+    
+    h1{
+        color: $color-primary;
+        font-family: $font-dancingScript;
+        
+    }
+// sub-heading
+    h3{
+        font-size: $font-josefinSans;
+        color: $color-secondary;
+        
+    }
+
+}
+
+
+// main-btn
+.card-overlay-btn{
+    width: 150px;
+    height: 40px;
+    color: #d3ab55;
+    background-color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #d3ab55;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+}
+// card
+.card{
+    h1{
+        font-family: $font-nunito;
+        font-size: 50px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        color: #fff;
+    }
+
+    p{
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 30px;
+        margin-bottom: 30px;
+        color: #fff;
+        @include textStyles();
+
+    }
+}
